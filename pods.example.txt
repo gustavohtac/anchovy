@@ -1,0 +1,10 @@
+# Template for pods.txt — list of pod hosts that mount the same shared
+# /workspace volume.  Copy this file to pods.txt (gitignored) and fill in
+# real credentials before running scripts/sync_to_pod.sh or
+# scripts/launch_1m_gen.sh.
+#
+# Format: USER@HOST -p PORT -i IDENTITY
+#
+# Example (RunPod, eu-cz-1 region, all pods on the same network volume):
+# root@213.192.X.Y  -p 4xxxx -i ~/.ssh/id_ed25519
+# root@213.192.X.Z  -p 4xxxx -i ~/.ssh/id_ed25519

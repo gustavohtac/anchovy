@@ -1,0 +1,25 @@
+[project]
+name = "sonho"
+version = "0.1.0"
+description = "Controlled scaling experiments for unified vision transformers on synthetic chest radiographs."
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+readme = "README.md"
+
+dependencies = [
+    "torch>=2.4",
+    "torchvision",
+    "numpy<2",
+    "pandas",
+    "pillow",
+    "diffusers>=0.30",
+    "transformers",
+    "timm",
+]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["data*", "models*", "experiments*"]

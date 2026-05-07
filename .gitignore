@@ -1,0 +1,53 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.python-version
+
+# ---- macOS ----
+.DS_Store
+
+# ---- Editors / IDE ----
+.idea/
+.vscode/
+*.swp
+.claude/
+
+# ---- Datasets and generated artifacts ----
+# Datasets are reproducible from data/generate.py — don't commit them.
+datasets/
+output_v3/
+output*/
+
+# ---- Cached features ----
+features/
+*.npy
+*.npz
+
+# ---- Experiment runtime state ----
+# These directories track in-flight tasks across pods; they are local
+# to a particular run.  Aggregate result files (`results.csv`,
+# `results.md`) ARE committed so the README can link to them.
+experiments/queue/
+experiments/running/
+experiments/done/
+experiments/failed/
+experiments/logs/
+experiments/results/
+
+# ---- Logs ----
+*.log
+pod_*.log
+
+# ---- Secrets ----
+# pods.txt contains real SSH credentials; commit pods.example.txt
+# instead.
+pods.txt
+
+# ---- Build artifacts ----
+build/
+dist/
+docs/results/
